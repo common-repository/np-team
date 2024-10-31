@@ -1,0 +1,37 @@
+.single_member{width:30%;display:inline-block; margin-right:20px;margin-bottom:30px;overflow:hidden;padding:15px 10px;background:#efefef;cursor:pointer;position:relative;}
+.single_member img{max-height:250px;width:100%;}
+div.single_member h2{margin-top: 10px;margin-bottom: 0px;font-size:20px;color:#333;font-weight:900;text-align:center;position:relative;padding-bottom:5px;}
+.single_member h2:after{position:absolute;bottom:0;left:35%;text-align:center;height:2px;width:30%;background:#adadad;content:""}
+.single_member p.np_position{text-align:center;font-size:14px;margin-bottom:10px;}
+.single_member p{color:#333}
+.single_member:hover {
+    -webkit-animation-name: np_team_animation; /* Chrome, Safari, Opera */
+    -webkit-animation-duration: 1s; /* Chrome, Safari, Opera */
+    animation-name: np_team_animation;
+    animation-duration: 1s;  
+	-webkit-animation-fill-mode: forwards; /* Chrome, Safari, Opera */
+    animation-fill-mode: forwards;
+}
+/* Chrome, Safari, Opera */
+@-webkit-keyframes np_team_animation {
+    from {box-shadow:0px 3px 7px transparent;background:#efefef;}
+    to {box-shadow:0px 3px 7px #adadad;background:#fff;}
+}
+/* Standard syntax */
+@keyframes np_team_animation {
+    from {box-shadow:0px 3px 7px transparent;background:#efefef;}
+    to {box-shadow:0px 3px 7px #adadad;background:#fff;}
+}
+/*******************************************reponsive css*/
+/*Tablet Layout:768px*/
+@media only screen and (min-width:768px)and (max-width:991px){
+.single_member{width:29%;}
+}
+/*Mobile Layout:320px*/
+@media only screen and (max-width:767px){
+.single_member{width:100%;}
+}
+/*Wide Mobile Layout:480px*/
+@media only screen and (min-width:480px)and (max-width:767px){
+.single_member{width:45%;}
+}
